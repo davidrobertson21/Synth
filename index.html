@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/build/bundle.js"></script>
+  <title>App</title>
+</head>
+<body>
+  <h1>Synth</h1>
+  <div class = "buttons">
+    <button id="arpegiator">ARP</button>
+    <button class="sawtooth">Sawtooth</button>
+    <button class="square">Square</button>
+    <button class="triangle">Triangle</button>
+    <button class="g"></button>
+    <button class="a"></button>
+    <button class="b"></button>
+  </div>
+
+  <div class = "distortion">
+    <h4>Distortion</h4>
+    <input type="range" id="distortion" value="10">
+  </div>
+
+  <div class = "reverb">
+    <h4>Reverb</h4>
+    <input type="range" id="reverb" value="10">
+  </div>
+
+  <div class = "chorus">
+    <h3>Chorus</h3>
+    <h4>Depth</h4>
+    <input type = "range" id = "chorusDepth" value = "10">
+    <h4>Delay Time</h4>
+    <input type = "range" id = "chorusDelayTime" value = "10">
+    <h4>Frequency</h4>
+    <input type = "range" id = "chorusFrequency" value = "10">
+  </div>
+
+  <div class = "envelope">
+    <h3>Envelope</h3>
+    <h4>Attack</h4>
+    <input type = "range" class = "envelopeslidera" id = "attack" value = "10" orient="vertical">
+    <h4>Sustain</h4>
+    <input type = "range" class = "envelopesliders" id = "sustain" value = "10" orient="vertical">
+    <h4>Decay</h4>
+    <input type = "range" class = "envelopesliderd" id = "decay" value = "10" orient="vertical">
+    <h4>Release</h4>
+    <input type = "range" class = "envelopesliderr" id = "release" value = "10" orient="vertical">
+  </div>
+
+  <div class = "filter">
+    <h3>Filter</h3>
+    <input type="range" id = "filter" value ="20000" name = "filter">
+  </div>
+
+  <div class = "delay">
+    <h3>Delay</h3>
+    <h4>Delay Time</h4>
+    <input type="range" id = "delayTime" value ="100">
+    <h4>Feedback</h4>
+    <input type="range" id = "delayFeedback" value ="100">
+    <h4>Wet/Dry</h4>
+    <input type="range" id = "delayWet" value ="100">
+  </div>
+
+</body>
+</html>
